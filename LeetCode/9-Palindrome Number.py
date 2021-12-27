@@ -1,0 +1,12 @@
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        x = str(x)
+        for i in range(len(x) // 2):
+            if x[i] != x[len(x) - 1 - i]:
+                return False
+        return True
+
+
+if __name__ == '__main__':
+    s = Solution()
+    print(s.isPalindrome(int(input())))
